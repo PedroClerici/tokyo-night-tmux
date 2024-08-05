@@ -3,6 +3,30 @@
 SELECTED_THEME="$(tmux show-option -gv @tokyo-night-tmux_theme)"
 
 case $SELECTED_THEME in
+"dark")
+  declare -A THEME=(
+    ["background"]="#1d1e29"
+    ["foreground"]="#abb2bf"
+    ["black"]="#252631"
+    ["blue"]="#7199ee"
+    ["cyan"]="#38a89d"
+    ["green"]="#98c379"
+    ["magenta"]="#a485dd"
+    ["red"]="#ee6d85"
+    ["white"]="#a0a8cd"
+    ["yellow"]="#d7a65f"
+
+    ["bblack"]="#2A2F41"
+    ["bblue"]="#7aa2f7"
+    ["bcyan"]="#7dcfff"
+    ["bgreen"]="#41a6b5"
+    ["bmagenta"]="#bb9af7"
+    ["bred"]="#ff9e64"
+    ["bwhite"]="#787c99"
+    ["byellow"]="#e0af68"
+  )
+  ;;
+
 "storm")
   declare -A THEME=(
     ["background"]="#24283b"
